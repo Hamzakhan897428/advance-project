@@ -1,7 +1,7 @@
 import random
 
 def play_game():
-    choices = ['snake', 'water', 'gun']
+    choices = ['snake', 'water', 'gun']#list command
     computer_choice = random.choice(choices)
     
     player_choice = input("Enter your choice (snake/water/gun): ").lower()
@@ -12,7 +12,7 @@ def play_game():
     
     print(f"Computer chose: {computer_choice}")
     print(f"You chose: {player_choice}")
-    
+    #print player choice 
     if player_choice == computer_choice:
         print("It's a tie!")
     elif (player_choice == 'snake' and computer_choice == 'water') or \
